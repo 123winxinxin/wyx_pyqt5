@@ -13,7 +13,7 @@ class QLabelBuddy(QDialog):
         nameLineEdit = QLineEdit(self)
         namelable.setBuddy(nameLineEdit)  # 设置伙伴控件
 
-        passwordlable = QLabel('&Name',self)
+        passwordlable = QLabel('&Password',self)
         passwordLineEdit = QLineEdit(self)
         passwordlable.setBuddy(passwordLineEdit)  # 设置伙伴控件
 
