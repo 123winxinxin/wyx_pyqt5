@@ -24,7 +24,7 @@ class QLabelDemo(QWidget):
 
         label3.setAlignment(Qt.AlignCenter)
         label3.setToolTip('这是一个图片标签')
-        label3.setPixmap(QPixmap("./images/python.png")) # 把标签变为图片
+        label3.setPixmap(QPixmap("../images/python.png")) # 把标签变为图片
 
         label4.setOpenExternalLinks(True)  # 如果为True  用浏览器打开链接，如为False 调用槽函数
         label4.setText("<a href='https://www.baidu.com'>百度</a>")
