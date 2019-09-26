@@ -1,7 +1,8 @@
 '''
 QSPINBox是一个计数器控件，允许用户选择一个整数值通过单击向上向下或者按键盘上的上下键来增加减少当前显示的值，当然用户也可以输入值
 在默认情况下，QSpinBox的取值范围是（0-99），每次改变的步长是1
-QSpinBox类和QDoubleSpinbox类均派生自QAbstractSpinBox类，QSpinBox用于处理整数值，QDoubleSpinBox则用于处理浮点数值，他们之间的区别就是处理数据的类型不同，其他功能基本相同，QDoubleSpinBox的默认精度是两位小数，但可以通过setDecimals（）来改变
+QSpinBox类和QDoubleSpinbox类均派生自QAbstractSpinBox类，QSpinBox用于处理整数值，QDoubleSpinBox则用于处理浮点数值，
+他们之间的区别就是处理数据的类型不同，其他功能基本相同，QDoubleSpinBox的默认精度是两位小数，但可以通过setDecimals（）来改变
 
 QSpinBox类中的常用方法
 方法	描述
