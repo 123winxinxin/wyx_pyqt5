@@ -1,3 +1,13 @@
+'''
+QRadioButton类中常用的方法
+setCheckanle()	设置按钮是否已经被选中，可以改变单选按钮的选中状态，如果设置为True则表示单选按钮将保持以点击和释放状态
+isChecked()	返回单选按钮的状态，返回值True或False
+setText()	设置单选按钮显示的文本
+text()	返回单选按钮显示的文本
+
+'''
+
+
 from PyQt5.QtWidgets import *
 import sys
 

@@ -1,3 +1,16 @@
+'''
+QTextEdit类是一个多行文本框控件，可以显示多行文本内容，当文本内容超出控件显示范围时，
+可以显示水平个垂直滚动条，Qtextedit不仅可以用来显示文本还可以用来显示HTML文档
+
+QTextEdit类中常用的方法
+setPlainText()	设置多行文本框的内容
+toPlainText()	返回多行文本框的文本内容
+setHtml()	设置多行文本框的文本内容为HTML文档，HTML文档是描述网页的
+toHtml()	返回多行文本框的HTML内容
+clear()	清除多行文本框的内容
+
+'''
+
 from PyQt5.QtWidgets import *
 import sys
 

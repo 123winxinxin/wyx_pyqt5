@@ -1,3 +1,43 @@
+'''
+QAbstractButton类为抽象类，不能实例化，必须由其他的按钮类继承QAbstractButton类，来实现不同的功能和表现形式，
+常见的按钮QPushButton，QToolButton，QRadioButton和QCheckBox这些按钮均继承自QAbstractButton类，
+根据各自的使用场景通过图形显示出来
+
+QAbstractButton提供的状态如下
+isDown()	提示按钮是否已按下
+isChecked()	提示按钮是否已经标记
+isEnable()	提示按钮是否可以被用户点击
+isCheckAble()	提示按钮是否为可标记的
+setAutoRepeat()	设置按钮是否在用户长按时可以自动重复执行
+
+QAbstractButton提供的信号如下
+Pressed	当鼠标指针在按钮上并按下左键时触发该信号
+Released	当鼠标左键被释放时触发该信号
+Clicked	当鼠标左键被按下然后释放时，或者快捷键被释放时触发该信号
+Toggled	当按钮的标记状态发生改变时触发该信号
+
+QPUshButton类中的常用方法
+setCheckable()	设置按钮是否已经被选中，如果设置True，则表示按钮将保持已点击和释放状态
+toggle()	在按钮状态之间进行切换
+setIcon()	设置按钮上的图标
+setEnabled()	设置按钮是否可以使用，当设置为False时，按钮变成不可用状态，点击它不会发射信号
+isChecked()	返回按钮的状态，返回值为True或者False
+setDefault()	设置按钮的默认状态
+setText()	设置按钮的显示文本
+text()	返回按钮的显示文本
+
+为QPushButton设置快捷键
+通过按钮名字能为QPushButton设置快捷键，比如名字为‘&Download’的按键，它的快捷键是‘Alt+D’。
+其规则是;想要实现快捷键为“Alt+D”，那么按钮的名字里有D这个字母，并且在D的前面加上“&”，
+这个字母D一般是按钮名称的首字母，而且在按钮显示时。“&”不会显示出来，如果想显示，那么需要转义，核心代码如下
+self.btn=QPushButton('&Download')
+self.btn.setDefault(True)
+
+
+'''
+
+
+
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *

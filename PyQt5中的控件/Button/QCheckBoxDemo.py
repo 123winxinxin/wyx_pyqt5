@@ -1,3 +1,18 @@
+'''
+QCheckBox类中常用方法如表
+setChecked()	设置复选框的状态，设置为True表示选中，False表示取消选中的复选框
+setText()	设置复选框的显示文本
+text()	返回复选框的显示文本
+isChecked()	检查复选框是否被选中
+setTriState()	设置复选框为一个三态复选框
+setCheckState()	三态复选框的状态设置，具体设置可以见下
+名称	                 值	           含义
+Qt.Checked	          2	          组件没有被选中（默认）
+Qt.PartiallyChecked	  1	          组件被半选中
+Qt.Unchecked	      0	         组件被选中
+
+'''
+
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
 import sys
