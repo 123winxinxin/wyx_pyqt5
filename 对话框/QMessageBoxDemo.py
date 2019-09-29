@@ -19,11 +19,11 @@ QMessageBox.about(self,'标题','关于对话框')
 
 QMessageBox类中常用方法
 information(QWdiget parent,title,text,buttons,defaultButton)	弹出消息对话框，各参数解释如下
-                                                            parent：指定的父窗口控件
-                                                            title：对话框标题
-                                                            text：对话框文本
-                                                            buttons：多个标准按钮，默认为ok按钮
-                                                            defaultButton：默认选中的标准按钮，默认选中第一个标准按钮
+                                                                    parent：指定的父窗口控件
+                                                                    title：对话框标题
+                                                                    text：对话框文本
+                                                                    buttons：多个标准按钮，默认为ok按钮
+                                                                    defaultButton：默认选中的标准按钮，默认选中第一个标准按钮
 question（QWidget parent,title,text,buttons,defaultButton）	弹出问答对话框（各参数解释如上）
 warning（QWidget parent,title,text,buttons,defaultButton）	弹出警告对话框（各参数解释如上）
 critical（QWidget parent,title,text,buttons,defaultButton）	弹出严重错误对话框（各参数解释如上）

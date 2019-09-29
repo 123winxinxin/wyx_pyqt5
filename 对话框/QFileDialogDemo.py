@@ -4,17 +4,17 @@ QFileDialog在打开文件时使用可文件过滤器，用于显示指定扩展
 
 QFileDialog类中的常用方法
 getOpenFileName()	返回用户所选择文件的名称，并打开该文件
-                    第一个参数self：用于指定父组件
-                    第二个参数是QFileDialog对话框的标题
-                    第三个参数默认打开的目录，‘.’代表程序运行的目录，‘/’代表当前盘下的根目录(window.linux系统),
-                                        需要注意的是不同路径的显示方式，比如window平台下的C盘“C:\”等
-                    第四个参数是对话框中文件扩展名过滤器（fliter）,比如使用’Image files (.jpg .gif .png .jpeg)’表示只能显示扩展名为.jpg,.gif等文件
+                        第一个参数self：用于指定父组件
+                        第二个参数是QFileDialog对话框的标题
+                        第三个参数默认打开的目录，‘.’代表程序运行的目录，‘/’代表当前盘下的根目录(window.linux系统),
+                                            需要注意的是不同路径的显示方式，比如window平台下的C盘“C:\”等
+                        第四个参数是对话框中文件扩展名过滤器（fliter）,比如使用’Image files (.jpg .gif .png .jpeg)’表示只能显示扩展名为   .jpg,.gif等文件
 getSaveFileName（）	使用用户选择的文件名保存文件
 setFileMode（）	可以选择的文件类型，枚举常量是：
-                    QFileDialog.AnyFile:任何文件
-                    QFileDialog.ExistingFile:已存在的文件
-                    QFileDialog.Directory:文件目录
-                    QFileDialog.ExistingFiles:已经存在的多个文件
+                        QFileDialog.AnyFile:任何文件
+                        QFileDialog.ExistingFile:已存在的文件
+                        QFileDialog.Directory:文件目录
+                        QFileDialog.ExistingFiles:已经存在的多个文件
 setFilter()	设置过滤器，只显示过滤器允许的文件类型
 
 '''
