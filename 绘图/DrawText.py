@@ -27,14 +27,14 @@ class DrawText(QWidget):
         self.resize(500,400)
         self.text = 'Hello,这是一个例子'
 
-    def paintEvent(self, event):
-        painter = QPainter(self)
-        painter.begin(self)
+    def paintEvent(self, event):  # 绘制都要在这个事件中
+        painter = QPainter()  # 实例化一个绘制的类
+        painter.begin(self)  # 开始在目标设备上绘制，需要一个参数，告诉在哪里绘制
         print('开始绘制')
-        painter.setPen(QColor(155,55,120))
-        painter.setFont(QFont('Arial',20))
+        painter.setPen(QColor(155,55,120))  # 设置画笔的颜色
+        painter.setFont(QFont('Arial',20)) # 设置字体
 
-        painter.drawText(event.rect(),Qt.AlignCenter,self.text)
+        painter.drawText(event.rect(),Qt.AlignCenter,self.text)  # 显示给定坐标处的文字 event.rect()是指这个窗口，还可以设置对齐方式和文本
 
         painter.end()
 
