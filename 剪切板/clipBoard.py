@@ -100,7 +100,6 @@ class ClipBoardDemo(QDialog):
         self.imageLabel.setPixmap(clipboard.pixmap())
 
 if __name__ =="__main__":
-    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
     app = QApplication(sys.argv)
     main = ClipBoardDemo()
     main.show()
