@@ -68,7 +68,7 @@ class TableWidgetDemo(QWidget):
         # TableWidget = QTableWidget()
         # TableWidget.setRowCount(4)
         # TableWidget.setColumnCount(3)
-        self.tableWidget.setHorizontalHeaderLabels(['姓名','年龄', '得分'])
+        self.tableWidget.setHorizontalHeaderLabels(['姓名','性别', '得分'])
 
         # 设置垂直方向的表头标签
         # TableWidget.setVerticalHeaderLabels(['行1', '行2', '行3', '行4'])
@@ -79,11 +79,11 @@ class TableWidgetDemo(QWidget):
         nameItem = QTableWidgetItem('小明')
         self.tableWidget.setItem(0,0,nameItem)
 
-        ageItem = QTableWidgetItem('17')
-        self.tableWidget.setItem(0,1, ageItem)
-
-        scoreItem = QTableWidgetItem('86')
-        self.tableWidget.setItem(0,2, scoreItem)
+        # ageItem = QTableWidgetItem('男')
+        # self.tableWidget.setItem(0,1, ageItem)
+        #
+        # scoreItem = QTableWidgetItem('86')
+        # self.tableWidget.setItem(0,2, scoreItem)
 
         layout.addWidget(self.tableWidget)
 
@@ -101,6 +101,17 @@ class TableWidgetDemo(QWidget):
         # self.tableWidget.horizontalHeader().setVisible(False)
         # self.tableWidget.verticalHeader().setVisible(False)
 
+        # 在单元格内放置控件
+        comBox = QComboBox()
+        comBox.addItems(['男','女'])
+        comBox.addItem('未知')
+        comBox.setStyleSheet('QComboBox{margin:3px}')  # QSS 设置Qt样式 此处为设置所有下拉框的样式为 距单元格边距3px
+        self.tableWidget.setCellWidget(0,1,comBox)  # 将控件放置到单元格中
+
+        modifyBtn=QPushButton('修改')
+        modifyBtn.setDown(True)  # 设置为按下状态
+        modifyBtn.setStyleSheet('QPushButton{margin:3px}')
+        self.tableWidget.setCellWidget(0,2,modifyBtn)
 
 
         self.setLayout(layout)
